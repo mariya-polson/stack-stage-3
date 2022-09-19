@@ -1,0 +1,351 @@
+@import url("https://fonts.googleapis.com/css2?family=Domine:wght@400;500&family=Poppins:wght@400;500;600;700;900&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+.navbar-light .navbar-toggler {
+  border-color: #fb5b29;
+}
+
+.navbar {
+  background-color: aquamarine;
+}
+.navbar .container {
+  background-color: azure;
+}
+.navbar .nav-part-1 {
+  margin: 0 0 0 6rem;
+}
+.navbar .nav-part-1 a.nav-link {
+  font-size: 16px;
+  font-weight: 500;
+  color: #342727;
+  margin: 0 1rem 0 0rem;
+}
+.navbar .nav-part-1 a.nav-link:hover {
+  color: #fb5b29;
+}
+.navbar .nav-part-1 a.nav-link:hover::after {
+  content: "";
+  display: block;
+  width: 40%;
+  border-bottom: 2px solid #fb5b29;
+  margin: 2px;
+  transition: all 0.3s linear 0s;
+}
+.navbar .nav-part-2 {
+  margin: 0 1rem 0 2rem;
+}
+.navbar .nav-part-2 .notification-badge-1 {
+  position: absolute;
+  display: flex;
+  background: #ff6233;
+  height: 7px;
+  top: 2.8rem;
+  right: 19.2rem;
+  width: 7px;
+  border-radius: 50%;
+}
+.navbar .nav-part-2 .notification-badge-2 {
+  position: absolute;
+  display: flex;
+  background: #ff6233;
+  height: 7px;
+  top: 2.8rem;
+  right: 14.7rem;
+  width: 7px;
+  border-radius: 50%;
+}
+
+.popular-row {
+  background-color: burlywood;
+}
+.popular-row .popular-left {
+  width: 396px;
+  height: 515px;
+  margin: 0 0rem 0 -8.15rem;
+}
+.popular-row .popular-right {
+  width: 435px;
+  height: 498px;
+  margin: 0 0rem 0 2rem;
+}
+.popular-row .popular-box h1 {
+  margin: 0 25rem 0 4rem;
+  font-size: 65px;
+  font-weight: 400;
+  color: #342727;
+  font-family: "Domine", serif;
+}
+.popular-row .popular-box h4 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #7e6b67;
+  margin: 0.875rem 0 0 4rem;
+}
+
+.carousel-indicators li {
+  width: 16px;
+  height: 16px;
+  margin-top: -19rem;
+  border-radius: 50%;
+  border: 1px solid #d5c8c6;
+  border-top: 0;
+  border-bottom: 0;
+  opacity: 1;
+}
+.carousel-indicators li.active {
+  opacity: 1;
+  background-color: #fb5b29;
+  border: none;
+}
+
+.banner-image {
+  background: url(../images/banner.png) no-repeat;
+  background-size: cover;
+}
+.banner-image .row.image-row1 {
+  justify-content: space-between;
+}
+.banner-image .row.image-row1 img.coriander {
+  width: 327px;
+  height: 382px;
+  margin: -60px 0 0 -108px;
+  /* transform: matrix(0.87, 0.5, -0.5, 0.87, 0, 0); */
+}
+.banner-image .row.image-row1 img.mint {
+  width: 266px;
+  height: 278px;
+}
+.banner-image .row.image-row2 {
+  justify-content: space-between;
+}
+.banner-image .row.image-row2 img.tomato {
+  width: 158px;
+  height: 212px;
+  margin: 1px 0 0 -44px;
+}
+.banner-image .row.image-row2 img.meal-bowl {
+  width: 420px;
+  height: 300px;
+  margin: -158px 0 0 99px;
+}
+.banner-image .row.image-row2 img.salad-bowl {
+  width: 200px;
+  height: 200px;
+}
+.banner-image .row.image-row2 .col-md-4.headings-col {
+  margin: -119px 0 0 -62px;
+}
+.banner-image .row.image-row2 .col-md-4.headings-col span.new {
+  font-size: 20px;
+  font-weight: 400;
+  color: #1762af;
+  display: flex;
+  width: 83px;
+  height: 35px;
+  border: 1px solid #1762af;
+  border-radius: 18px;
+  justify-content: center;
+}
+.banner-image .row.image-row2 .col-md-4.headings-col p.ultimate {
+  font-size: 100px;
+  font-weight: 400;
+  color: #342727;
+  font-family: "Domine", serif;
+  line-height: 1;
+}
+.banner-image .row.image-row2 .col-md-4.headings-col p sup {
+  font-size: 24px;
+  font-weight: 500;
+  color: #272c34;
+  top: -138px;
+  left: 554px;
+}
+.banner-image .row.image-row2 .col-md-4.headings-col p.available {
+  font-size: 22px;
+  font-weight: 400;
+  color: #7e6b67;
+  margin-bottom: 0;
+  line-height: -33;
+  margin: -103px 0 0 0;
+}
+.banner-image .row.image-row2 .col-md-4.headings-col p.available span {
+  font-size: 22px;
+  font-weight: 500;
+  color: #f8b333;
+}
+.banner-image .row.image-row3 {
+  align-items: flex-start;
+}
+.banner-image .row.image-row3 .fork-col img.spoon-fork {
+  width: 440px;
+  height: 468px;
+  margin: -46px 46px 0 30px;
+}
+.banner-image .row.image-row3 .plate-col img.plate-meal {
+  width: 514px;
+  height: 518px;
+  margin: -45px 0 0 49px;
+}
+.banner-image .row.image-row3 .input-col input[type=text] {
+  background: url(../images/location.png) no-repeat;
+  background-position: 12px;
+  padding-left: 41px;
+  width: 683px;
+  height: 70px;
+  border-radius: 50px;
+  background-color: #ffffff;
+  border: 1px solid #fb5b29;
+  opacity: 1;
+  font-size: 16px;
+}
+.banner-image .row.image-row3 .input-col .find {
+  font-size: 20px;
+  font-weight: 400;
+  color: #ffffff;
+  width: 252px;
+  height: 70px;
+  border: none;
+  background: #fb5b29 0% 0% no-repeat padding-box;
+  border-radius: 50px;
+  opacity: 1;
+  float: right;
+  margin: -70px -24px 0 12px;
+  position: relative;
+}
+.banner-image .row.justify-content-center.overlap-banner-row {
+  margin: -395px 0 0 0;
+  position: relative;
+  top: 130px;
+}
+.banner-image .row.justify-content-center.overlap-banner-row .overlap-bannerimage {
+  background: url(../images/waves.png) no-repeat, url(../images/overlap-banner.png) no-repeat;
+  background-size: cover;
+  width: 1367px;
+  height: 374px;
+  border-radius: 190px;
+}
+.banner-image .row.justify-content-center.overlap-banner-row .overlap-bannerimage h4.overlap-heading {
+  font-size: 50px;
+  font-weight: 500;
+  color: #ffffff;
+  padding: 0 7rem;
+  font-family: "Domine", serif;
+  text-align: center;
+}
+.banner-image .row.justify-content-center.overlap-banner-row .overlap-bannerimage .learn {
+  width: 252px;
+  height: 70px;
+  border: 2px solid #ffffff;
+  background: transparent;
+  border-radius: 50px;
+  opacity: 1;
+  font-size: 20px;
+  font-weight: 500;
+  color: #ffffff;
+  border-radius: 35px;
+}
+
+.container-bannerimage {
+  background: url(../images/wave.png) no-repeat, url(../images/rectangle-bg.png) no-repeat, url(../images/banner-container3.png) no-repeat;
+  background-size: cover;
+  padding: 0 0 0 10rem;
+}
+.container-bannerimage .favourites {
+  font-size: 65px;
+  font-weight: 400;
+  color: #ffffff;
+  padding: 5rem 47rem 0 0;
+  font-family: "Domine", serif;
+}
+.container-bannerimage .good-food {
+  font-size: 20px;
+  font-weight: 400;
+  color: #ffffff;
+  opacity: 0.7;
+}
+.container-bannerimage .nav-tab-row .nav-pills {
+  border-bottom: 1px solid #7e6b67;
+  margin-bottom: 1rem;
+}
+.container-bannerimage .nav-tab-row .nav-pills .nav-link {
+  border-radius: 0;
+  font-size: 20px;
+  font-weight: 400;
+  color: #ffffff;
+}
+.container-bannerimage .nav-tab-row .nav-pills .nav-link.active {
+  color: #f85b33;
+  border-bottom: 2px solid #f85b33;
+  background-color: transparent;
+}
+.container-bannerimage .container.tab-pane {
+  margin: 1rem 0 0;
+  padding: 0 0 7rem;
+}
+.container-bannerimage .container.tab-pane .arrow-row .slider {
+  font-size: 14px;
+  font-weight: 400;
+  color: #7e6b67;
+  margin: 0 120px 34px 0;
+}
+.container-bannerimage .container.tab-pane .arrow-row .slider img {
+  width: 28px;
+  height: 16px;
+}
+.container-bannerimage .container.tab-pane .offer-card {
+  width: 21rem;
+  border: none;
+  border-radius: 10px;
+}
+.container-bannerimage .container.tab-pane .offer-card img.card-img-left {
+  width: 163px;
+}
+.container-bannerimage .container.tab-pane .offer-card .card-body {
+  margin: 0 -10px 0 2px;
+  padding-right: 0;
+}
+.container-bannerimage .container.tab-pane .offer-card .card-body .special {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+  margin: 0;
+}
+.container-bannerimage .container.tab-pane .offer-card .card-body .all-day {
+  font-size: 12px;
+  font-weight: 400;
+  color: #7e6b67;
+}
+.container-bannerimage .container.tab-pane .offer-card .card-body .flat {
+  font-size: 13px;
+  font-weight: 500;
+  color: #82706c;
+  margin-bottom: 0;
+}
+.container-bannerimage .container.tab-pane .offer-card .card-body .off {
+  font-size: 28px;
+  font-weight: 900;
+  color: #fb5b29;
+}
+.container-bannerimage .container.tab-pane .offer-card .card-body .btn-primary {
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+  width: 126px;
+  height: 35px;
+  border: none;
+  background: #fb5b29;
+  border-radius: 50px;
+  opacity: 1;
+}
+.container-bannerimage .container.tab-pane .offer-card .card-body .btn-primary.btn-2 {
+  color: #1762af;
+  width: 126px;
+  height: 35px;
+  border: 1px solid #1762af;
+  background: #ffffff;
+  border-radius: 50px;
+  opacity: 1;
+}/*# sourceMappingURL=style.css.map */

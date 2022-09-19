@@ -1,0 +1,17 @@
+@mixin text-property($fs, $fw, $fc) {
+  font-size: $fs;
+  font-weight: $fw;
+  color: $fc;
+}
+@mixin image-property($width, $height) {
+  width: $width;
+  height: $height;
+}
+@mixin btn-property($width, $height, $border, $bgcolor) {
+  width: $width;
+  height: $height;
+  border: $border;
+  background: $bgcolor;
+  border-radius: 50px;
+  opacity: 1;
+}

@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>The Stack</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-light navbar-expand-lg py-4">
+      <div class="container px-0">
+        <a class="navbar-brand px-0" href="#">
+          <img src="../images/logo.png" alt="logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse ms-5" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0 nav-part-1">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Management</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Marketing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">FAQ’s</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav mb-2 mb-lg-0 nav-part-2">
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><img src="../images/conversation.png" alt="conversation" />
+                <span class="notification-badge-1"></span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><img src="../images/settings.png" alt="settings"
+              /></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><img src="../images/notification.png" alt="notification"
+              /></a>
+              <span class="notification-badge-2"></span>
+            </li>
+          </ul>
+          <a href="#"
+            ><img src="../images/user_image.png" alt="user_image"
+          /></a>
+        </div>
+      </div>
+    </nav>
+    <!-- ---------------------image container---------------------------------------- -->
+    <div class="container-fluid p-0">
+      <div class="row mt-0">
+        <div class="col">
+          <div class="banner-image">
+            <div id="demo" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+                <li data-target="#demo" data-slide-to="3"></li>
+                <li data-target="#demo" data-slide-to="4"></li>
+              </ul>
+
+              <!-- The slideshow -->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row image-row1">
+                    <img
+                      src="../images/leaf-2.png"
+                      alt="leaves"
+                      class="coriander"
+                    />
+                    <img src="../images/leaf-1.png" alt="leaves" class="mint" />
+                  </div>
+                  <div class="row image-row2">
+                    <div class="col-md-2 tomato-col">
+                      <img
+                        src="../images/tomato.png"
+                        alt="tomato"
+                        class="tomato"
+                      />
+                    </div>
+
+                    <div class="col-md-4 headings-col">
+                      <span class="new">New</span>
+                      <p class="ultimate mt-1">
+                        Ultimate Breakfeasts <sup>TM</sup>
+                      </p>
+                      <p class="available">
+                        Available through <span>June 2nd</span>
+                      </p>
+                    </div>
+                    <div class="col-md-4 meal-col">
+                      <img
+                        src="../images/meal-bowl.png"
+                        alt="meal-bowl"
+                        class="meal-bowl"
+                      />
+                    </div>
+                    <div class="col-md-2 salad-col">
+                      <img
+                        src="../images/salad-bowl.png"
+                        alt="salad-bowl"
+                        class="salad-bowl"
+                      />
+                    </div>
+                  </div>
+                  <div class="row image-row3 align-items-start">
+                    <div class="col-md-3 fork-col d-flex justify-content-end">
+                      <img
+                        src="../images/spoon-fork.png"
+                        alt="spoon-fork"
+                        class="spoon-fork"
+                      />
+                    </div>
+                    <div class="col-md-6 input-col">
+                      <input
+                        type="text"
+                        placeholder="Enter your address, zip code"
+                        class="pincode"
+                      />
+                      <button class="find">Find Restaurent</button>
+                    </div>
+                    <div class="col-md-3 plate-col">
+                      <img
+                        src="../images/plate-meal.png"
+                        alt="plate-meal"
+                        class="plate-meal"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row image-row1">
+                    <img
+                      src="../images/leaf-2.png"
+                      alt="leaves"
+                      class="coriander"
+                    />
+                    <img src="../images/leaf-1.png" alt="leaves" class="mint" />
+                  </div>
+                  <div class="row image-row2">
+                    <div class="col-md-2 tomato-col">
+                      <img
+                        src="../images/tomato.png"
+                        alt="tomato"
+                        class="tomato"
+                      />
+                    </div>
+
+                    <div class="col-md-4 headings-col">
+                      <span class="new">New</span>
+                      <p class="ultimate mt-1">
+                        Ultimate Breakfeasts <sup>TM</sup>
+                      </p>
+                      <p class="available">
+                        Available through <span>June 2nd</span>
+                      </p>
+                    </div>
+                    <div class="col-md-4 meal-col">
+                      <img
+                        src="../images/meal-bowl.png"
+                        alt="meal-bowl"
+                        class="meal-bowl"
+                      />
+                    </div>
+                    <div class="col-md-2 salad-col">
+                      <img
+                        src="../images/salad-bowl.png"
+                        alt="salad-bowl"
+                        class="salad-bowl"
+                      />
+                    </div>
+                  </div>
+                  <div class="row image-row3 align-items-start">
+                    <div class="col-md-3 fork-col d-flex justify-content-end">
+                      <img
+                        src="../images/spoon-fork.png"
+                        alt="spoon-fork"
+                        class="spoon-fork"
+                      />
+                    </div>
+                    <div class="col-md-6 input-col">
+                      <input
+                        type="text"
+                        placeholder="Enter your address, zip code"
+                        class="pincode"
+                      />
+                      <button class="find">Find Restaurent</button>
+                    </div>
+                    <div class="col-md-3 plate-col">
+                      <img
+                        src="../images/plate-meal.png"
+                        alt="plate-meal"
+                        class="plate-meal"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row image-row1">
+                    <img
+                      src="../images/leaf-2.png"
+                      alt="leaves"
+                      class="coriander"
+                    />
+                    <img src="../images/leaf-1.png" alt="leaves" class="mint" />
+                  </div>
+                  <div class="row image-row2">
+                    <div class="col-md-2 tomato-col">
+                      <img
+                        src="../images/tomato.png"
+                        alt="tomato"
+                        class="tomato"
+                      />
+                    </div>
+
+                    <div class="col-md-4 headings-col">
+                      <span class="new">New</span>
+                      <p class="ultimate mt-1">
+                        Ultimate Breakfeasts <sup>TM</sup>
+                      </p>
+                      <p class="available">
+                        Available through <span>June 2nd</span>
+                      </p>
+                    </div>
+                    <div class="col-md-4 meal-col">
+                      <img
+                        src="../images/meal-bowl.png"
+                        alt="meal-bowl"
+                        class="meal-bowl"
+                      />
+                    </div>
+                    <div class="col-md-2 salad-col">
+                      <img
+                        src="../images/salad-bowl.png"
+                        alt="salad-bowl"
+                        class="salad-bowl"
+                      />
+                    </div>
+                  </div>
+                  <div class="row image-row3 align-items-start">
+                    <div class="col-md-3 fork-col d-flex justify-content-end">
+                      <img
+                        src="../images/spoon-fork.png"
+                        alt="spoon-fork"
+                        class="spoon-fork"
+                      />
+                    </div>
+                    <div class="col-md-6 input-col">
+                      <input
+                        type="text"
+                        placeholder="Enter your address, zip code"
+                        class="pincode"
+                      />
+                      <button class="find">Find Restaurent</button>
+                    </div>
+                    <div class="col-md-3 plate-col">
+                      <img
+                        src="../images/plate-meal.png"
+                        alt="plate-meal"
+                        class="plate-meal"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row image-row1">
+                    <img
+                      src="../images/leaf-2.png"
+                      alt="leaves"
+                      class="coriander"
+                    />
+                    <img src="../images/leaf-1.png" alt="leaves" class="mint" />
+                  </div>
+                  <div class="row image-row2">
+                    <div class="col-md-2 tomato-col">
+                      <img
+                        src="../images/tomato.png"
+                        alt="tomato"
+                        class="tomato"
+                      />
+                    </div>
+
+                    <div class="col-md-4 headings-col">
+                      <span class="new">New</span>
+                      <p class="ultimate mt-1">
+                        Ultimate Breakfeasts <sup>TM</sup>
+                      </p>
+                      <p class="available">
+                        Available through <span>June 2nd</span>
+                      </p>
+                    </div>
+                    <div class="col-md-4 meal-col">
+                      <img
+                        src="../images/meal-bowl.png"
+                        alt="meal-bowl"
+                        class="meal-bowl"
+                      />
+                    </div>
+                    <div class="col-md-2 salad-col">
+                      <img
+                        src="../images/salad-bowl.png"
+                        alt="salad-bowl"
+                        class="salad-bowl"
+                      />
+                    </div>
+                  </div>
+                  <div class="row image-row3 align-items-start">
+                    <div class="col-md-3 fork-col d-flex justify-content-end">
+                      <img
+                        src="../images/spoon-fork.png"
+                        alt="spoon-fork"
+                        class="spoon-fork"
+                      />
+                    </div>
+                    <div class="col-md-6 input-col">
+                      <input
+                        type="text"
+                        placeholder="Enter your address, zip code"
+                        class="pincode"
+                      />
+                      <button class="find">Find Restaurent</button>
+                    </div>
+                    <div class="col-md-3 plate-col">
+                      <img
+                        src="../images/plate-meal.png"
+                        alt="plate-meal"
+                        class="plate-meal"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row image-row1">
+                    <img
+                      src="../images/leaf-2.png"
+                      alt="leaves"
+                      class="coriander"
+                    />
+                    <img src="../images/leaf-1.png" alt="leaves" class="mint" />
+                  </div>
+                  <div class="row image-row2">
+                    <div class="col-md-2 tomato-col">
+                      <img
+                        src="../images/tomato.png"
+                        alt="tomato"
+                        class="tomato"
+                      />
+                    </div>
+
+                    <div class="col-md-4 headings-col">
+                      <span class="new">New</span>
+                      <p class="ultimate mt-1">
+                        Ultimate Breakfeasts <sup>TM</sup>
+                      </p>
+                      <p class="available">
+                        Available through <span>June 2nd</span>
+                      </p>
+                    </div>
+                    <div class="col-md-4 meal-col">
+                      <img
+                        src="../images/meal-bowl.png"
+                        alt="meal-bowl"
+                        class="meal-bowl"
+                      />
+                    </div>
+                    <div class="col-md-2 salad-col">
+                      <img
+                        src="../images/salad-bowl.png"
+                        alt="salad-bowl"
+                        class="salad-bowl"
+                      />
+                    </div>
+                  </div>
+                  <div class="row image-row3 align-items-start">
+                    <div class="col-md-3 fork-col d-flex justify-content-end">
+                      <img
+                        src="../images/spoon-fork.png"
+                        alt="spoon-fork"
+                        class="spoon-fork"
+                      />
+                    </div>
+                    <div class="col-md-6 input-col">
+                      <input
+                        type="text"
+                        placeholder="Enter your address, zip code"
+                        class="pincode"
+                      />
+                      <button class="find">Find Restaurent</button>
+                    </div>
+                    <div class="col-md-3 plate-col">
+                      <img
+                        src="../images/plate-meal.png"
+                        alt="plate-meal"
+                        class="plate-meal"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Left and right controls
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </a> -->
+            </div>
+            <!-- <div class="row image-row1">
+                <img src="../images/leaf-2.png" alt="leaves" class="coriander" />
+                <img src="../images/leaf-1.png" alt="leaves" class="mint" />
+              </div>
+              <div class="row image-row2">
+                <div class="col-md-2 tomato-col">
+                  <img src="../images/tomato.png" alt="tomato" class="tomato" />
+                </div>
+  
+                <div class="col-md-4 headings-col">
+                  <span class="new">New</span>
+                  <p class="ultimate mt-1">Ultimate Breakfeasts <sup>TM</sup></p>
+                  <p class="available">Available through <span>June 2nd</span></p>
+                </div>
+                <div class="col-md-4 meal-col">
+                  <img
+                    src="../images/meal-bowl.png"
+                    alt="meal-bowl"
+                    class="meal-bowl"
+                  />
+                </div>
+                <div class="col-md-2 salad-col">
+                  <img
+                    src="../images/salad-bowl.png"
+                    alt="salad-bowl"
+                    class="salad-bowl"
+                  />
+                </div>
+              </div>
+              <div class="row image-row3 align-items-start">
+                <div class="col-md-3 fork-col d-flex justify-content-end">
+                  <img
+                    src="../images/spoon-fork.png"
+                    alt="spoon-fork"
+                    class="spoon-fork"
+                  />
+                </div>
+                <div class="col-md-6 input-col">
+                  <input
+                    type="text"
+                    placeholder="Enter your address, zip code"
+                    class="pincode"
+                  />
+                  <button class="find">Find Restaurent</button>
+                </div>
+                <div class="col-md-3 plate-col">
+                  <img
+                    src="../images/plate-meal.png"
+                    alt="plate-meal"
+                    class="plate-meal"
+                  />
+                </div>
+              </div> -->
+            <div class="row justify-content-center overlap-banner-row">
+              <div class="col d-flex justify-content-center">
+                <div
+                  class="container overlap-bannerimage d-flex justify-content-center align-items-center flex-column"
+                >
+                  <h4 class="overlap-heading mt-5">
+                    A bigger breakfast with pancakes and french toast at a
+                    delicious price.
+                  </h4>
+                  <button class="learn">Learn More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="row popular-row">
+      <div class="col">
+        <div class="popular-resources">
+          <img
+            src="../images/popular-left.png"
+            class="popular-left"
+            alt="image"
+          />
+          <div class="popular-box">
+            <h1>Popular Resources</h1>
+            <h4>Freshly prepared for you special delight.</h4>
+          </div>
+
+          <img
+            src="../images/popular-right.png"
+            class="popular-right"
+            alt="image"
+          />
+        </div>
+      </div>
+    </div> -->
+    <div class="row popular-row">
+      <div class="col-md-2">
+        <img
+          src="../images/popular-left.png"
+          class="popular-left"
+          alt="image"
+        />
+      </div>
+      <div class="col-md-8 popular-box">
+        <h1>Popular Resources</h1>
+        <h4>Freshly prepared for you special delight.</h4>
+      </div>
+      <div class="col-md-2">
+        <img
+          src="../images/popular-right.png"
+          class="popular-right"
+          alt="image"
+        />
+      </div>
+    </div>
+    <div class="container-fluid p-0">
+      <div class="row mt-0">
+        <div class="col">
+          <div class="container-bannerimage">
+            <h3 class="favourites">My Favourites</h3>
+            <h6 class="good-food">Good food is always cooking!</h6>
+            <!-- Nav tabs -->
+            <div class="row nav-tab-row mt-5">
+              <ul class="nav nav-pills" role="tablist">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    data-toggle="pill"
+                    href="#first-active"
+                    >Burger Point</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" href="#menu1"
+                    >Breakfast</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" href="#menu2">
+                    Firangi Bake
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" href="#menu3">
+                    Pizza
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" href="#menu4">
+                    Cafee</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" href="#menu5">
+                    Beverage
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" href="#menu6">
+                    Quick Bites</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" href="#menu7">
+                    Soups</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" href="#menu8">
+                    Salada</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-content">
+              <div id="first-active" class="container tab-pane active">
+                <div class="row arrow-row justify-content-end">
+                  <span class="slider"
+                    ><img src="../images/previous.png" alt="previous" />1/5
+
+                    <img src="../images/orange-next.png" alt="next"
+                  /></span>
+                </div>
+
+                <div class="row card-row flex-row">
+                  <div class="card offer-card flex-row">
+                    <img
+                      src="../images/egg-sandwich.png"
+                      class="card-img-left"
+                      alt="egg-sandwich"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title special">Special Breakfast</h5>
+                      <h6 class="card-title all-day">All Day Breakfast</h6>
+                      <p class="card-text flat">Flat</p>
+                      <p class="card-text off">50% off</p>
+                      <a href="#" class="btn btn-primary">Explore</a>
+                    </div>
+                  </div>
+                  <div class="card offer-card flex-row ml-4">
+                    <img
+                      src="../images/veg-sandwich.png"
+                      class="card-img-left"
+                      alt="veg-sandwich"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title special">Simply Breakfast</h5>
+                      <h6 class="card-title all-day">Sandwiches</h6>
+                      <p class="card-text flat">Flat</p>
+                      <p class="card-text off">50% off</p>
+                      <a href="#" class="btn btn-primary btn-2">Explore</a>
+                    </div>
+                  </div>
+                  <div class="card offer-card flex-row ml-4">
+                    <img
+                      src="../images/burger.png"
+                      class="card-img-left"
+                      alt="Burger"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title special">Burger King</h5>
+                      <h6 class="card-title all-day">Mutton Whopper®</h6>
+                      <p class="card-text flat">Flat</p>
+                      <p class="card-text off">50% off</p>
+                      <a href="#" class="btn btn-primary btn-2">Explore</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="menu1" class="container tab-pane fade">
+                <div class="row arrow-row justify-content-end">
+                  <span class="slider"
+                    ><img src="../images/previous.png" alt="previous" />1/5
+
+                    <img src="../images/orange-next.png" alt="next"
+                  /></span>
+                </div>
+
+                <div class="row card-row flex-row">
+                  <div class="card offer-card flex-row">
+                    <img
+                      src="../images/egg-sandwich.png"
+                      class="card-img-left"
+                      alt="egg-sandwich"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title special">Special Breakfast</h5>
+                      <h6 class="card-title all-day">All Day Breakfast</h6>
+                      <p class="card-text flat">Flat</p>
+                      <p class="card-text off">50% off</p>
+                      <a href="#" class="btn btn-primary">Explore</a>
+                    </div>
+                  </div>
+                  <div class="card offer-card flex-row ml-4">
+                    <img
+                      src="../images/veg-sandwich.png"
+                      class="card-img-left"
+                      alt="veg-sandwich"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title special">Simply Breakfast</h5>
+                      <h6 class="card-title all-day">Sandwiches</h6>
+                      <p class="card-text flat">Flat</p>
+                      <p class="card-text off">50% off</p>
+                      <a href="#" class="btn btn-primary btn-2">Explore</a>
+                    </div>
+                  </div>
+                  <div class="card offer-card flex-row ml-4">
+                    <img
+                      src="../images/burger.png"
+                      class="card-img-left"
+                      alt="Burger"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title special">Burger King</h5>
+                      <h6 class="card-title all-day">Mutton Whopper®</h6>
+                      <p class="card-text flat">Flat</p>
+                      <p class="card-text off">50% off</p>
+                      <a href="#" class="btn btn-primary btn-2">Explore</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="menu2" class="container tab-pane fade">
+                <div class="row arrow-row justify-content-end">
+                  <span class="slider"
+                    ><img src="../images/previous.png" alt="previous" />1/5
+
+                    <img src="../images/orange-next.png" alt="next"
+                  /></span>
+                </div>
+
+                <div class="row card-row flex-row">
+                  <div class="card offer-card flex-row">
+                    <img
+                      src="../images/egg-sandwich.png"
+                      class="card-img-left"
+                      alt="egg-sandwich"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title special">Special Breakfast</h5>
+                      <h6 class="card-title all-day">All Day Breakfast</h6>
+                      <p class="card-text flat">Flat</p>
+                      <p class="card-text off">50% off</p>
+                      <a href="#" class="btn btn-primary">Explore</a>
+                    </div>
+                  </div>
+                  <div class="card offer-card flex-row ml-4">
+                    <img
+                      src="../images/veg-sandwich.png"
+                      class="card-img-left"
+                      alt="veg-sandwich"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title special">Simply Breakfast</h5>
+                      <h6 class="card-title all-day">Sandwiches</h6>
+                      <p class="card-text flat">Flat</p>
+                      <p class="card-text off">50% off</p>
+                      <a href="#" class="btn btn-primary btn-2">Explore</a>
+                    </div>
+                  </div>
+                  <div class="card offer-card flex-row ml-4">
+                    <img
+                      src="../images/burger.png"
+                      class="card-img-left"
+                      alt="Burger"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title special">Burger King</h5>
+                      <h6 class="card-title all-day">Mutton Whopper®</h6>
+                      <p class="card-text flat">Flat</p>
+                      <p class="card-text off">50% off</p>
+                      <a href="#" class="btn btn-primary btn-2">Explore</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="menu2" class="container tab-pane fade"></div>
+              <div id="menu2" class="container tab-pane fade"></div>
+              <div id="menu2" class="container tab-pane fade"></div>
+              <div id="menu2" class="container tab-pane fade"></div>
+              <div id="menu2" class="container tab-pane fade"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

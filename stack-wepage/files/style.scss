@@ -1,0 +1,333 @@
+@import url("https://fonts.googleapis.com/css2?family=Domine:wght@400;500&family=Poppins:wght@400;500;600;700;900&display=swap");
+@import "utils";
+@import "variables";
+
+body {
+  font-family: $font-family-1;
+  overflow-x: hidden;
+}
+.navbar-light .navbar-toggler {
+  border-color: $color-7;
+}
+.navbar {
+  background-color: aquamarine;
+
+  .container {
+    background-color: azure;
+  }
+  .nav-part-1 {
+    margin: 0 0 0 6rem;
+    a.nav-link {
+      @include text-property($font-16, $font-500, $color-4);
+      margin: 0 1rem 0 0rem;
+      &:hover {
+        color: $color-7;
+        &::after {
+          content: "";
+          display: block;
+          width: 40%;
+          border-bottom: 2px solid $color-7;
+          margin: 2px;
+          transition: all 0.3s linear 0s;
+        }
+      }
+    }
+  }
+  .nav-part-2 {
+    margin: 0 1rem 0 2rem;
+    .notification-badge-1 {
+      position: absolute;
+      display: flex;
+      background: $color-10;
+      height: 7px;
+      top: 2.8rem;
+      right: 19.2rem;
+      width: 7px;
+      border-radius: 50%;
+    }
+    .notification-badge-2 {
+      position: absolute;
+      display: flex;
+      background: $color-10;
+      height: 7px;
+      top: 2.8rem;
+      right: 14.7rem;
+      width: 7px;
+      border-radius: 50%;
+    }
+  }
+}
+.popular-row {
+  background-color: burlywood;
+  //   background-color: $color-11;
+
+  //   //   margin: 23.63rem 0 0 0;
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: space-between;
+  .popular-left {
+    width: 396px;
+    height: 515px;
+    margin: 0 0rem 0 -8.15rem;
+  }
+  .popular-right {
+    width: 435px;
+    height: 498px;
+    margin: 0 0rem 0 2rem;
+  }
+  .popular-box {
+    h1 {
+      margin: 0 25rem 0 4rem;
+      @include text-property($font-65, $font-400, $color-4);
+      font-family: $font-family-2;
+    }
+    h4 {
+      @include text-property($font-20, $font-400, $color-6);
+
+      margin: 0.875rem 0 0 4rem;
+    }
+  }
+}
+
+// -------------------------------------------------------------------
+
+.carousel-indicators li {
+  width: 16px;
+  height: 16px;
+  margin-top: -19rem;
+  border-radius: 50%;
+  border: 1px solid $color-12;
+  border-top: 0;
+  border-bottom: 0;
+  opacity: 1;
+  &.active {
+    opacity: 1;
+    background-color: $color-7;
+    border: none;
+  }
+}
+
+.banner-image {
+  background: url(../images/banner.png) no-repeat;
+  background-size: cover;
+  // background-position: center;
+  .row.image-row1 {
+    justify-content: space-between;
+    img.coriander {
+      @include image-property(327px, 382px);
+      margin: -60px 0 0 -108px;
+
+      /* transform: matrix(0.87, 0.5, -0.5, 0.87, 0, 0); */
+    }
+    img.mint {
+      @include image-property(266px, 278px);
+    }
+  }
+  .row.image-row2 {
+    justify-content: space-between;
+    img.tomato {
+      @include image-property(158px, 212px);
+      margin: 1px 0 0 -44px;
+    }
+    img.meal-bowl {
+      @include image-property(420px, 300px);
+      margin: -158px 0 0 99px;
+    }
+    img.salad-bowl {
+      @include image-property(200px, 200px);
+    }
+    .col-md-4.headings-col {
+      margin: -119px 0 0 -62px;
+
+      span {
+        &.new {
+          @include text-property($font-20, $font-400, $color-2);
+          display: flex;
+          width: 83px;
+          height: 35px;
+          border: 1px solid $color-2;
+          border-radius: 18px;
+          justify-content: center;
+        }
+      }
+      p {
+        &.ultimate {
+          @include text-property($font-100, $font-400, $color-4);
+
+          font-family: $font-family-2;
+          line-height: 1;
+        }
+        sup {
+          @include text-property($font-24, $font-500, $color-5);
+          top: -138px;
+          left: 554px;
+        }
+      }
+      p {
+        &.available {
+          @include text-property($font-22, $font-400, $color-6);
+          margin-bottom: 0;
+          line-height: -33;
+          margin: -103px 0 0 0;
+          span {
+            @include text-property($font-22, $font-500, $color-3);
+          }
+        }
+      }
+    }
+  }
+  .row.image-row3 {
+    align-items: flex-start;
+    .fork-col {
+      img.spoon-fork {
+        @include image-property(440px, 468px);
+        margin: -46px 46px 0 30px;
+      }
+    }
+    .plate-col {
+      img.plate-meal {
+        @include image-property(514px, 518px);
+        margin: -45px 0 0 49px;
+      }
+    }
+    .input-col {
+      input[type="text"] {
+        background: url(../images/location.png) no-repeat;
+        background-position: 12px;
+        padding-left: 41px;
+        width: 683px;
+        height: 70px;
+        border-radius: 50px;
+        background-color: $color-1;
+        border: 1px solid $color-7;
+        opacity: 1;
+        font-size: $font-16;
+      }
+      .find {
+        @include text-property($font-20, $font-400, $color-1);
+        @include btn-property(
+          252px,
+          70px,
+          none,
+          $color-7 0% 0% no-repeat padding-box
+        );
+        float: right;
+        margin: -70px -24px 0 12px;
+        position: relative;
+      }
+    }
+  }
+  .row.justify-content-center.overlap-banner-row {
+    margin: -395px 0 0 0;
+    position: relative;
+    top: 130px;
+
+    .overlap-bannerimage {
+      background: url(../images/waves.png) no-repeat,
+        url(../images/overlap-banner.png) no-repeat;
+      background-size: cover;
+      width: 1367px;
+      height: 374px;
+      border-radius: 190px;
+      // opacity: 0.2;
+      h4 {
+        &.overlap-heading {
+          @include text-property($font-50, $font-500, $color-1);
+          padding: 0 7rem;
+          font-family: $font-family-2;
+          text-align: center;
+        }
+      }
+      .learn {
+        @include btn-property(252px, 70px, 2px solid $color-1, transparent);
+        @include text-property($font-20, $font-500, $color-1);
+        border-radius: 35px;
+      }
+    }
+  }
+}
+.container-bannerimage {
+  background: url(../images/wave.png) no-repeat,
+    url(../images/rectangle-bg.png) no-repeat,
+    url(../images/banner-container3.png) no-repeat;
+  background-size: cover;
+  padding: 0 0 0 10rem;
+  .favourites {
+    @include text-property($font-65, $font-400, $color-1);
+    padding: 5rem 47rem 0 0;
+    font-family: $font-family-2;
+  }
+  .good-food {
+    @include text-property($font-20, $font-400, $color-1);
+    opacity: 0.7;
+  }
+  .nav-tab-row {
+    .nav-pills {
+      border-bottom: 1px solid $color-6;
+      margin-bottom: 1rem;
+
+      .nav-link {
+        border-radius: 0;
+        @include text-property($font-20, $font-400, $color-1);
+        &.active {
+          color: $color-13;
+          border-bottom: 2px solid $color-13;
+          background-color: transparent;
+        }
+      }
+    }
+  }
+  .container {
+    &.tab-pane {
+      // &.fade {
+      margin: 1rem 0 0;
+      padding: 0 0 7rem;
+      .arrow-row {
+        .slider {
+          @include text-property($font-14, $font-400, $color-6);
+          margin: 0 120px 34px 0;
+          img {
+            width: 28px;
+            height: 16px;
+          }
+        }
+      }
+      .offer-card {
+        width: 21rem;
+        border: none;
+        border-radius: 10px;
+        img.card-img-left {
+          width: 163px;
+          // height: 150px;
+        }
+        .card-body {
+          margin: 0 -10px 0 2px;
+          padding-right: 0;
+          .special {
+            @include text-property($font-16, $font-400, $color-14);
+            margin: 0;
+          }
+          .all-day {
+            @include text-property($font-12, $font-400, $color-6);
+          }
+          .flat {
+            @include text-property($font-13, $font-500, $color-15);
+            margin-bottom: 0;
+          }
+          .off {
+            @include text-property($font-28, $font-900, $color-7);
+          }
+          .btn-primary {
+            @include text-property($font-14, $font-400, $color-1);
+            @include btn-property(126px, 35px, none, $color-7);
+            &.btn-2 {
+              color: $color-2;
+              @include btn-property(126px, 35px, 1px solid $color-2, $color-1);
+            }
+          }
+        }
+      }
+      // }
+    }
+  }
+}
